@@ -1,7 +1,6 @@
 import NavBar from "@/components/NavBar";
 import { Search } from "@/components/ui/search";
 import { UserNav } from "@/components/userNav";
-import AuthForm from "./auth-form";
 
 export default function Home() {
   return (
@@ -16,9 +15,6 @@ export default function Home() {
             <UserNav />
           </div>
         </div>
-      </div>
-      <div className="flex">
-        <AuthForm />
       </div>
     </main>
   );

@@ -1,12 +1,9 @@
-import { UserAuthForm } from "@/components/AuthForm";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import AuthForm from "../../auth-form";
 
 export default function AuthPage() {
   return (
     <main className="flex h-full flex-col items-center justify-between">
-      <div className="container relative h-screen flex-col items-center justify-center grid max-w-none lg:grid-cols-2 lg:px-0">
+      {/* <div className="container relative h-screen flex-col items-center justify-center grid max-w-none lg:grid-cols-2 lg:px-0">
         <Link
           href="/examples/authentication"
           className={cn(
@@ -74,7 +71,8 @@ export default function AuthPage() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <AuthForm />
     </main>
   );
 }
