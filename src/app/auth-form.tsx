@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { Session } from "@supabase/auth-helpers-nextjs";
@@ -34,12 +34,10 @@ export default function Login() {
   return (
     <Auth
       supabaseClient={supabase}
-      // view="magic_link"
       appearance={{ theme: ThemeSupa }}
-      // theme="dark"
-      // showLinks={false}
-      // providers={[]}
-      // redirectTo="http://localhost:3000/auth/callback"
+      showLinks={true}
+      providers={["google", "linkedin", "apple", "twitter"]}
+      redirectTo="http://localhost:3000/auth/callback"
     />
   );
 }
